@@ -1,0 +1,27 @@
+@page "/"
+
+@using Microsoft.JSInterop
+
+@inject IJSRuntime JS
+
+@code {
+    // Static birthday - change these values to your actual birthday
+
+}
+
+<div class="countdown-card">
+    @if (DaysUntilBirthday() == 0)
+    {
+        <div class="celebrate">
+            <img src="images/sigrid.jpg" class="sigrid" alt="Sigrid" />
+            <h1>Hoera, het is eindelijk mijn verjaardag!</h1>
+            <p class="message">Vandaag vier ik met taart, ballonnen en veel confetti 🎉</p>
+        </div>
+    }
+    else
+    {
+        <img src="images/sigrid.jpg" class="sigrid" alt="Sigrid" />
+        <div class="countdown-number">Nog @DaysUntilBirthday() dagen</div>
+        <p>tot mijn verjaardag</p>
+    }
+</div>
