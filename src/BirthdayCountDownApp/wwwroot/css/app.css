@@ -11,12 +11,12 @@ body {
 .countdown-number{font-size:48px;font-weight:700;color:#ff4081}
 .celebrate{background:linear-gradient(45deg,#ffecb3,#ffe0f0);border-radius:18px;padding:28px;text-align:center;box-shadow:0 12px 36px rgba(255,64,129,0.12)}
 .confetti{width:100%;height:160px;background-image:url('/images/confetti.png');background-repeat:repeat}
-.sigrid{max-width:220px;border-radius:12px;margin:16px auto;display:block}
+.foto{max-width:220px;border-radius:12px;margin:16px auto;display:block}
 .message{font-size:20px;margin-top:12px}
 
 @media (max-width:480px) {
   .countdown-number{font-size:36px}
-  .sigrid{max-width:160px}
+  .foto{max-width:160px}
   .main{padding:16px}
   .countdown-card{padding:18px;border-radius:14px}
   .celebrate{padding:20px}
