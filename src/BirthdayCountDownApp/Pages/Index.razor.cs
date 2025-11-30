@@ -1,11 +1,19 @@
-﻿using Microsoft.JSInterop;
+﻿using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace BirthdayCountDownApp.Pages;
 
 public partial class Index
 {
+    
+#if LEON
+    private readonly int _birthdayMonth = 12; // month (1-12)
+    private readonly int _birthdayDay = 11; // day (1-31)
+#else
     private readonly int _birthdayMonth = 12; // month (1-12)
     private readonly int _birthdayDay = 16; // day (1-31)
+#endif
+    
     private bool _hasStartedConfetti = false;
     
     protected override async Task OnAfterRenderAsync(bool firstRender)
